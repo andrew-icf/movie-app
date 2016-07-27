@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="movieApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/darkly/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Movie App</h1>
+        <a ui-sref="home" class="btn btn-info">Home</a>
+      </div>
+      <div ui-view></div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+    <script src="app/controllers/Home.controller.js"></script>
+  </body>
+</html>
