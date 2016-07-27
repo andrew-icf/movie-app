@@ -2,7 +2,9 @@
   <form class="form">
     <div class="form-group">
       <label for="search">Search</label>
-      <input type="text" id="search" placeholder="Search">
+      <input type="text" id="search" class="form-control" placeholder="Search Movies" ng-model="title">
+      <a class="btn btn-info" ng-click="getMovies()">Go get Movies</a>
     </div>
   </form>
+  <div ui-view></div>
 </div>

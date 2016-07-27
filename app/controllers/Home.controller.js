@@ -1,6 +1,12 @@
-angular.module('movieApp')
+angular
+  .module('movieApp')
   .controller('HomeController', HomeController);
 
   function HomeController($scope, $state){
-    console.log("hello from home controller");
+
+    $scope.getMovies = function(){
+      $state.go('home.movies', {
+        title: $scope.title
+      });
+    };
   };
