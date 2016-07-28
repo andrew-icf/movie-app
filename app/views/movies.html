@@ -1,6 +1,6 @@
-<div class="container-fluid box" ng-repeat="movieData in movies">
+<div class="container-fluid box" ng-repeat="movieData in movies"> <!-- from ng-model -->
   <div class="row">
-    <a ui-sref="home.movie({id: movieData.imdbID})">
+    <a ui-sref="home.movie({id: movieData.imdbID})"><!-- getting api id on movie -->
       <div class="col-md-12 border">
         <h2>{{movieData.Title}}</h2>
         <p>{{movieData.Year}}</p>
