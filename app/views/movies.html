@@ -1,8 +1,10 @@
-<div ng-repeat="movieData in movies">
-  <a ui-sref="home.movie({id: movieData.imdbID})">
-    <div class="container">
-      <h2>{{movieData.Title}}</h2>
-      <p>{{movieData.Year}}</p>
-    </div>
-  </a>
+<div class="container-fluid box" ng-repeat="movieData in movies">
+  <div class="row">
+    <a ui-sref="home.movie({id: movieData.imdbID})">
+      <div class="col-md-12 border">
+        <h2>{{movieData.Title}}</h2>
+        <p>{{movieData.Year}}</p>
+      </div>
+    </a>
+  </div>
 </div>

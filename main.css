@@ -1,0 +1,11 @@
+.border {
+  border: 1px solid hsl(180, 100%, 55%);
+  border-radius: 5px;
+  background: radial-gradient(teal, black);
+  color: hsl(180, 100%, 95%);
+}
+.height {
+  height: 50vh;
+  width: 60vw;
+  overflow: scroll;
+}

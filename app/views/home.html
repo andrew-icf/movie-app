@@ -1,10 +1,12 @@
-<div class="container">
-  <form class="form">
-    <div class="form-group">
-      <label for="search">Search</label>
-      <input type="text" id="search" class="form-control" placeholder="Search Movies" ng-model="title">
-      <a class="btn btn-info" ng-click="getMovies()">Go get Movies</a>
-    </div>
-  </form>
-  <div ui-view></div>
+<div class="container-fluid col-md-8 col-md-offset-2">
+  <div class="row">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="search">Search</label>
+        <input type="text" id="search" class="form-control" placeholder="Search Movies" ng-model="title">
+        <a class="btn btn-info" ng-click="getMovies()">Go get Movies</a>
+      </div>
+    </form>
+  </div>
+  <div ui-view class="height movie"></div>
 </div>
